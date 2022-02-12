@@ -82,6 +82,8 @@ func main() {
 	} else {
 		panic("invalid state. Game is over and there is no winner")
 	}
+	time.Sleep(10 * time.Second) // แก้ปัญหาเกมสุดท้ายแล้วโปรแกรมปิดเลย
+
 }
 
 func getRandomWord() string {
